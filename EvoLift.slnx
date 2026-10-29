@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="EvoLift.Application/EvoLift.Application.csproj" />
+  <Project Path="EvoLift.Domain/EvoLift.Domain.csproj" />
+  <Project Path="EvoLift.Infrastructure/EvoLift.Infrastructure.csproj" />
+  <Project Path="EvoLift.UnitTests/EvoLift.UnitTests.csproj" />
+  <Project Path="EvoLift.App/EvoLift.App.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

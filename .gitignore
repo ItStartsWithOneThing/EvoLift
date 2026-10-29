@@ -1,0 +1,113 @@
+
+# =========================================================
+# .NET / MSBuild build output
+# =========================================================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+TestResults/
+*.binlog
+
+# =========================================================
+# Visual Studio / Rider / VS Code
+# =========================================================
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# =========================================================
+# macOS / Windows / temporary files
+# =========================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+*~
+
+# =========================================================
+# NuGet
+# =========================================================
+*.nupkg
+*.snupkg
+# Keep packages.config and project dependency declarations tracked.
+# NuGet caches normally live outside the repository.
+
+# =========================================================
+# Android / Gradle generated files
+# =========================================================
+.gradle/
+**/android/build/
+**/Android/bin/
+**/Android/obj/
+local.properties
+
+# Android signing keys and private credentials
+*.keystore
+*.jks
+
+# =========================================================
+# iOS / Apple generated files
+# =========================================================
+**/ios/build/
+**/iOS/bin/
+**/iOS/obj/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# =========================================================
+# Local databases and database sidecar files
+# =========================================================
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+
+# Local backup archives (not application backup code)
+*.backup
+*.bakdb
+
+# =========================================================
+# Secrets and local configuration
+# =========================================================
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Development.json
+*.pfx
+*.publishsettings
+
+# Add specific service-account private-key files here.
+# Do not blanket-ignore all Google configuration JSON files.
+
+# =========================================================
+# Logs and test coverage
+# =========================================================
+*.log
+coverage/
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# =========================================================
+# Generated IDE / tooling state
+# =========================================================
+_ReSharper*/
+.localhistory/
+.mfractor/
