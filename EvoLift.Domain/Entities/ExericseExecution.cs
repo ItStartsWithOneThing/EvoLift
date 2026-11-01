@@ -8,6 +8,6 @@
 
         public Guid ExerciseId { get; set; }
         public required Exercise Exercise { get; set; }
-        public required ICollection<Set> Sets { get; set; }
+        public ICollection<Set>? Sets { get; set; }
     }
 }
