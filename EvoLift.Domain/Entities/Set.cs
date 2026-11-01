@@ -6,6 +6,7 @@
         public int ExericseExecutionSequenceNumber { get; set; }
         public int Repetitions { get; set; }
         public double WeightKg { get; set; }
+        public bool IsWarmup { get; set; }
         public DateTime AddedAt { get; set; }
 
         public Guid ExericseExecutionId { get; set; }
