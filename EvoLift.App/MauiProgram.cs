@@ -31,7 +31,12 @@ namespace EvoLift.App
             var databasePath = Path.Combine(FileSystem.AppDataDirectory, "EvoLift.db");
             builder.Services.AddInfrastructure(databasePath);
 
-            return builder.Build();
+            var app = builder.Build();
+
+            GlobalExceptionHandler.Initialize(
+                app.Services.GetRequiredService<ILoggerFactory>());
+
+            return app;
         }
     }
 }
